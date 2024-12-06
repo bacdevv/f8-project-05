@@ -126,3 +126,79 @@ a {
 	--height: 52px;
 	min-width: 113px;
 }
+
+/* Hero */
+.hero {
+	margin-top: 76px;
+}
+
+.hero__content {
+	width: 46%;
+}
+
+.hero__quote {
+	color: var(--sub-color);
+	line-height: 1.75;
+}
+
+.hero__quote::before {
+	position: relative;
+	left: 0;
+	top: -4px;
+	content: "";
+	width: 18px;
+	height: 2px;
+	margin-right: 12px;
+	background: var(--sub-color);
+	display: inline-block;
+}
+
+.hero__heading {
+	margin-top: 12px;
+	color: var(--dark-color);
+	font-size: 6rem;
+	font-weight: 700;
+	line-height: 1.16;
+}
+
+.hero__desc {
+	margin-top: 20px;
+	font-size: 1.8rem;
+	line-height: 1.66;
+}
+
+.subscribe-form {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 74px;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.subscribe-form__input,
+.subscribe-form__submit {
+	outline: none;
+	border: none;
+}
+
+.subscribe-form__input {
+	color: var(--sub-color);
+	width: inherit;
+	padding: 24px;
+}
+
+.subscribe-form__submit {
+	cursor: pointer;
+	margin-right: 8px;
+	background: var(--primary-color);
+}
+
+.hero__remark {
+	margin-top: 20px;
+	color: var(--sub-color);
+	font-size: 1.4rem;
+	font-weight: 600;
+}
