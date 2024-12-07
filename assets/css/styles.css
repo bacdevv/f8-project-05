@@ -93,6 +93,23 @@ main,
 	line-height: 1.75;
 }
 
+.section-quote {
+	color: var(--sub-color);
+	line-height: 1.75;
+}
+
+.section-quote::before {
+	position: relative;
+	left: 0;
+	top: -4px;
+	content: "";
+	width: 18px;
+	height: 2px;
+	margin-right: 12px;
+	background: var(--sub-color);
+	display: inline-block;
+}
+
 /* Card */
 
 .card {
@@ -242,23 +259,6 @@ main,
 .hero__content {
 	width: 46%;
 	margin-top: 47px;
-}
-
-.hero__quote {
-	color: var(--sub-color);
-	line-height: 1.75;
-}
-
-.hero__quote::before {
-	position: relative;
-	left: 0;
-	top: -4px;
-	content: "";
-	width: 18px;
-	height: 2px;
-	margin-right: 12px;
-	background: var(--sub-color);
-	display: inline-block;
 }
 
 .hero__heading {
@@ -501,6 +501,7 @@ main,
 
 .work__inner {
 	display: flex;
+	align-items: center;
 }
 
 .work__media {
@@ -601,4 +602,35 @@ main,
 	color: var(--sub-color);
 	font-family: Inter, sans-serif;
 	font-size: 1.2rem;
+}
+
+/* Work Content */
+.work__content {
+	width: 41%;
+	margin-left: auto;
+}
+
+.work__heading {
+	margin-top: 12px;
+}
+
+.work__list {
+	margin-top: 70px;
+}
+
+.work-item__title {
+	color: var(--dark-color);
+	font-size: 2.2rem;
+	font-weight: 600;
+	line-height: 1.45;
+}
+
+.work-item + .work-item {
+	margin-top: 30px;
+}
+
+.work-item__desc {
+	margin-top: 16px;
+	color: var(--sub-color);
+	line-height: 1.75;
 }
