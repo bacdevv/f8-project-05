@@ -32,7 +32,7 @@
 		<header class="header fixed">
 			<div class="container">
 				<!-- Header Top -->
-				<div class="header__inner">
+				<div class="header__inner" data-aos="fade-right">
 					<!-- Logo -->
 					<a href="#!" class="logo">
 						<img src="./assets/icons/logo.svg" alt="" class="logo__img" />
@@ -68,27 +68,126 @@
 				<section class="hero">
 					<!-- Hero Left -->
 					<div class="hero__content">
-						<blockquote class="hero__quote">Digital Smart Wallet</blockquote>
-						<h1 class="hero__heading">Digital <b class="highlight">Payment</b> For Everyone.</h1>
-						<p class="hero__desc section-desc">
+						<blockquote class="hero__quote" data-aos="fade-right">Digital Smart Wallet</blockquote>
+						<h1 class="hero__heading" data-aos="fade-left">
+							Digital <b class="highlight">Payment</b> For Everyone.
+						</h1>
+						<p class="hero__desc section-desc" data-aos="zoom-in">
 							We bring together eveything that’s required to build websites and apps that accept payments and
 							send payouts globally. We are the best platform.
 						</p>
-						<form action="#!" class="subscribe-form">
+						<form action="#!" class="subscribe-form" data-aos="flip-up">
 							<input
 								type="email"
 								name=""
 								id=""
 								class="subscribe-form__input"
 								placeholder="Your email address"
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 							/>
 							<button type="submit" class="btn subscribe-form__submit">Get Started</button>
 						</form>
-						<p class="hero__remark">*We’ll respect the inbox and never share your email.</p>
+						<p class="hero__remark" data-aos="fade-up-left">
+							*We’ll respect the inbox and never share your email.
+						</p>
 					</div>
 
 					<!-- Hero Right -->
-					<div class="hero__media"></div>
+					<figure class="hero__media" data-aos="fade-down">
+						<img src="./assets/icons/phone-pattern.svg" alt="" class="hero__phone-sket" data-aos="flip-up" />
+
+						<!-- Card -->
+						<div class="card" data-aos="zoom-in" data-aos-delay="200">
+							<img src="./assets/icons/trampoline-01.svg" alt="" class="card__icon" />
+							<img src="./assets/icons/trampoline-02.svg" alt="" class="card__icon card__icon-second" />
+							<p class="card__main">Main Balance</p>
+							<p class="card__money">$78,355.17</p>
+							<div class="card__row">
+								<p class="card__text">VALID THUR</p>
+								<p class="card__text">CARD HOLDER</p>
+							</div>
+							<div class="card__row card__row-bottom">
+								<p class="card__text-bold">08/22</p>
+								<p class="card__text-bold">Md Moshqur Alam</p>
+							</div>
+						</div>
+
+						<!-- Hero List -->
+						<div class="hero__list" data-aos="zoom-in" data-aos-delay="200">
+							<div class="hero__row">
+								<p class="hero__transection">Transections</p>
+								<img src="./assets/icons/filter.svg" alt="" />
+							</div>
+
+							<!-- Hero Item 01 -->
+							<div class="hero-item">
+								<figure class="hero-item__icon-wrap">
+									<img src="./assets/icons/exchange.svg" alt="" />
+								</figure>
+
+								<div class="hero-item__info">
+									<p class="hero-item__title">Received Money</p>
+									<p class="hero-item__desc">email@gmail.com</p>
+								</div>
+
+								<div class="hero-item__data">
+									<p class="hero-item__cash">+ $1,600</p>
+									<p class="hero-item__date">Sep 23</p>
+								</div>
+							</div>
+
+							<!-- Hero Item 02 -->
+							<div class="hero-item">
+								<figure class="hero-item__icon-wrap">
+									<img src="./assets/icons/send.svg" alt="" />
+								</figure>
+
+								<div class="hero-item__info">
+									<p class="hero-item__title">Send Money</p>
+									<p class="hero-item__desc">Airbnb Payment</p>
+								</div>
+
+								<div class="hero-item__data">
+									<p class="hero-item__cash">- $600</p>
+									<p class="hero-item__date">Sep 23</p>
+								</div>
+							</div>
+
+							<!-- Hero Item 03 -->
+							<div class="hero-item">
+								<figure class="hero-item__icon-wrap">
+									<img src="./assets/icons/received.svg" alt="" />
+								</figure>
+
+								<div class="hero-item__info">
+									<p class="hero-item__title">Received Money</p>
+									<p class="hero-item__desc">Upwork Earning</p>
+								</div>
+
+								<div class="hero-item__data">
+									<p class="hero-item__cash">+ $1,600</p>
+									<p class="hero-item__date">Sep 23</p>
+								</div>
+							</div>
+
+							<!-- Hero Item 04 -->
+							<div class="hero-item">
+								<figure class="hero-item__icon-wrap">
+									<img src="./assets/icons/wallet.png" alt="" />
+								</figure>
+
+								<div class="hero-item__info">
+									<p class="hero-item__title">Pay Bill</p>
+									<p class="hero-item__desc">Electricity Bill</p>
+								</div>
+
+								<div class="hero-item__data">
+									<p class="hero-item__cash">- $1,600</p>
+									<p class="hero-item__date">Sep 23</p>
+								</div>
+							</div>
+						</div>
+					</figure>
 				</section>
 			</div>
 		</header>
@@ -100,6 +199,11 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init();
+
+			AOS.init({
+				duration: 1000,
+				once: true, // whether animation should happen only once - while scrolling down
+			});
 		</script>
 	</body>
 </html>
