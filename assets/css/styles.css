@@ -287,7 +287,7 @@ a {
 }
 
 .card__row-bottom {
-	margin-top: 5px;
+	margin-top: 12px;
 	column-gap: 36px;
 }
 
@@ -389,5 +389,86 @@ a {
 	margin-top: 6px;
 	color: var(--sub-color);
 	font-size: 1rem;
+	line-height: 1;
+}
+
+.hero__deposit,
+.hero__interest,
+.hero__secure {
+	position: absolute;
+}
+
+/* Deposit */
+.hero__deposit {
+	top: 113px;
+	left: -100px;
+	display: flex;
+	align-items: center;
+	width: 174px;
+	padding: 14px 10px;
+	border-radius: 6px;
+	background: #fff;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero__deposit-text {
+	margin-left: 8px;
+	color: #31456a;
+	font-size: 1.4rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.hero__deposit-cost {
+	margin-left: auto;
+	color: #4ab5e3;
+	font-size: 1.4rem;
+	line-height: 1;
+}
+
+/* Interest */
+.hero__interest {
+	top: 127px;
+	right: -174px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 4px;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: #da6464;
+}
+
+.hero__interest-percent {
+	font-size: 4.4rem;
+	font-weight: 600;
+}
+
+/* Secure */
+.hero__secure {
+	right: -74px;
+	bottom: 61px;
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	color: #fff;
+	width: 124px;
+	padding: 20px 14px;
+	border-radius: 10px;
+	background: #439f90;
+}
+
+.hero__secure-cost {
+	font-size: 1.4rem;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.hero__secure-desc {
+	margin-top: 4px;
+	font-size: 0.8rem;
 	line-height: 1;
 }
