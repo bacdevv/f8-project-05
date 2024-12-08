@@ -23,6 +23,7 @@
 		<!-- Stylesheet CSS -->
 		<link rel="stylesheet" href="./assets/css/reset.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/animate.css" />
 
 		<!-- Animation (AOS) -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -173,7 +174,7 @@
 							<!-- Hero Item 04 -->
 							<div class="hero-item">
 								<figure class="hero-item__icon-wrap">
-									<img src="./assets/icons/wallet.png" alt="" />
+									<img src="./assets/icons/wallet.svg" alt="" />
 								</figure>
 
 								<div class="hero-item__info">
@@ -215,26 +216,21 @@
 		</header>
 
 		<main style="height: 15000px">
+			<!-- Work -->
 			<section class="work">
 				<div class="container">
 					<div class="work__inner">
 						<!-- Work Media -->
-						<div class="work__media">
+						<div class="work__media" data-aos="fade-right">
 							<figure class="work__img-bg">
-								<img
-									src="./assets/img/work-01.png"
-									alt=""
-									class="work__img"
-									data-aos="fade-up-right"
-									data-aos-delay="200"
-								/>
+								<img src="./assets/img/work-01.png" alt="" class="work__img" />
 							</figure>
 
-							<figure class="work__img-wrap" data-aos="fade-left">
+							<figure class="work__img-wrap">
 								<img src="./assets/icons/logo.svg" alt="" class="logo" />
 							</figure>
 
-							<div class="work__congrat toast" data-aos="fade-right">
+							<div class="work__congrat toast">
 								<figure class="work__congrat-wrap">
 									<img src="./assets/icons/checklist.svg" alt="" class="work__congrat-checklist" />
 								</figure>
@@ -245,22 +241,21 @@
 								</div>
 							</div>
 						</div>
-
 						<!-- Work Content -->
-						<section class="work__content">
-							<blockquote class="section-quote" data-aos="fade-down">Digital Smart Wallet</blockquote>
-							<h2 class="section-heading work__heading" data-aos="fade-down">How It Works</h2>
+						<section class="work__content" data-aos="fade-left">
+							<blockquote class="section-quote">Digital Smart Wallet</blockquote>
+							<h2 class="section-heading work__heading">How It Works</h2>
 
 							<!-- Work List -->
 							<div class="work__list">
-								<article class="work-item" data-aos="fade-down" data-aos-delay="200">
+								<article class="work-item">
 									<h3 class="work-item__title">1. Open a High Interest Checking account</h3>
 									<p class="work-item__desc">
 										Fund your bank account with a minimum balance of $100. Enroll in 3 minutes or less!
 									</p>
 								</article>
 
-								<article class="work-item" data-aos="fade-down" data-aos-delay="300">
+								<article class="work-item">
 									<h3 class="work-item__title">
 										2. 10 point-of-sale transactions each Month that are at least $10 each.
 									</h3>
@@ -269,7 +264,7 @@
 									</p>
 								</article>
 
-								<article class="work-item" data-aos="fade-down" data-aos-delay="400">
+								<article class="work-item">
 									<h3 class="work-item__title">3. Receive up to 5.50% APY</h3>
 									<p class="work-item__desc">
 										The APY you earn will be based on your account balance and satisfying the transaction
@@ -278,6 +273,82 @@
 								</article>
 							</div>
 						</section>
+					</div>
+				</div>
+			</section>
+
+			<!-- Product -->
+			<section class="product">
+				<div class="container">
+					<div class="product__inner">
+						<!-- Product Info -->
+						<article class="product__info" data-aos="fade-right">
+							<p class="section-quote">Digital Smart Wallet</p>
+							<h2 class="section-heading product__heading">One Card For All Your Payments</h2>
+							<p class="section-desc product__desc">
+								We bring together eveything that’s required to build websites and apps that accept payments
+								and send payouts globally. We are the best platform.
+							</p>
+
+							<ul class="product__list">
+								<li class="product-item">Global Payments</li>
+								<li class="product-item">One-Click Purchase</li>
+								<li class="product-item">Friendly Price</li>
+							</ul>
+
+							<a href="#!" class="btn product__btn">Get Started</a>
+						</article>
+
+						<!-- Product Media -->
+						<div class="product__media">
+							<!-- Card -->
+							<div class="card product__card" data-aos="zoom-in">
+								<img src="./assets/icons/trampoline-01.svg" alt="" class="card__icon" />
+								<img src="./assets/icons/trampoline-02.svg" alt="" class="card__icon" />
+								<p class="card__main">Main Balance</p>
+								<p class="card__money" data-aos="zoom-in">$78,355.17</p>
+								<div class="card__row">
+									<p class="card__text">VALID THUR</p>
+									<p class="card__text">CARD HOLDER</p>
+								</div>
+								<div class="card__row card__row-bottom">
+									<p class="card__text-bold">08/22</p>
+									<p class="card__text-bold">Md Moshqur Alam</p>
+								</div>
+							</div>
+
+							<!-- Product Toast -->
+							<div class="product__send toast" data-aos="flip-left">
+								<figure class="product__send-wrap">
+									<img src="./assets/icons/send.svg" alt="" />
+								</figure>
+
+								<div class="product-toast__info">
+									<p class="product-toast__title">Send Money</p>
+									<p class="product-toast__desc">Airbnb Payment</p>
+								</div>
+
+								<div class="product-toast__data">
+									<p class="product-toast__cash">- $600</p>
+									<p class="product-toast__date">Sep 23</p>
+								</div>
+							</div>
+
+							<!-- Product Toast 2-->
+							<div class="product__received toast" data-aos="flip-right">
+								<figure class="product__toast-wrap">
+									<img src="./assets/icons/received.svg" alt="" />
+								</figure>
+
+								<div class="product-toast__info product-toast__received-info">
+									<p class="product-toast__title product-toast__received-title">Income</p>
+								</div>
+
+								<div class="product-toast__data product-toast__received-data">
+									<p class="product-toast__cash product-toast__received-cash">$1250</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -291,7 +362,7 @@
 
 			AOS.init({
 				duration: 1500,
-				once: true, // whether animation should happen only once - while scrolling down
+				once: true,
 			});
 		</script>
 	</body>
