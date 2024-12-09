@@ -1023,3 +1023,74 @@ main,
 	color: var(--primary-color);
 	line-height: 1.62;
 }
+
+/* Application */
+.app {
+	position: relative;
+	margin: 80px 0;
+	padding: 100px 368px;
+	background: var(--primary-color);
+	border-radius: 24px;
+}
+
+.app__inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.app__header {
+	width: 435px;
+}
+
+.app__quote,
+.app__heading,
+.app__desc {
+	color: #fff;
+}
+
+.app__quote::before {
+	background: #fff;
+}
+
+.app__download {
+	margin-top: 38px;
+	display: flex;
+	column-gap: 16px;
+}
+
+.app__download-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 182px;
+	height: 64px;
+	background: #fff;
+	border-radius: 8px;
+}
+
+.app__icon {
+	position: absolute;
+}
+
+.app__icon--left {
+	top: 48px;
+	left: 112px;
+}
+
+.app__icon--right {
+	top: 48px;
+	right: 112px;
+}
+
+.app__icon--botleft {
+	left: 166px;
+	bottom: 49px;
+}
+
+.app__icon--botright {
+	right: 166px;
+	bottom: 49px;
+}
