@@ -944,8 +944,13 @@ main,
 	border-radius: 2px;
 	display: inline-block;
 }
-
-.client__dot--active {
+.client__dot--active,
+.client__dot:hover {
 	background: var(--primary-color);
 	border-color: var(--primary-color);
+	cursor: pointer;
+}
+
+.client__dots:hover .client__dot--active {
+	background: transparent;
 }
