@@ -17,6 +17,7 @@ html {
 
 body {
 	font-size: 1.6rem;
+	overflow-x: hidden;
 }
 
 button,
@@ -60,6 +61,9 @@ main,
 	border-radius: 8px;
 	background: var(--dark-color);
 	display: inline-block;
+	outline: none;
+	border: none;
+	cursor: pointer;
 }
 
 .btn:hover {
@@ -1093,4 +1097,88 @@ main,
 .app__icon--botright {
 	right: 166px;
 	bottom: 49px;
+}
+
+/* Footer */
+.footer {
+	margin-top: 100px;
+	padding-top: 100px;
+	background: #fafbff;
+}
+
+.footer__row {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 181px;
+}
+
+.footer__heading-bottom,
+.footer__heading {
+	color: var(--dark-color);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.66;
+	margin-bottom: 24px;
+}
+
+.footer__heading-bottom {
+	margin-top: 48px;
+}
+
+.footer__link {
+	color: var(--sub-color);
+	font-size: 1.8rem;
+	line-height: 1.66;
+	display: inline-block;
+}
+
+.footer__item {
+	margin-bottom: 16px;
+}
+
+.footer__column-adress {
+	font-size: 1.8rem;
+	width: 371px;
+}
+
+.letter-form {
+	display: flex;
+	column-gap: 20px;
+}
+
+.letter-form__input {
+	width: 270px;
+	padding: 12px;
+	outline: none;
+	border-radius: 6px;
+	border: 1px solid #8e919a;
+	background: transparent;
+}
+
+.letter-form__submit {
+	min-width: 113px;
+	--height: 52px;
+	border-radius: 6px;
+	background: var(--primary-color);
+}
+
+.footer__contact {
+	margin-top: 54px;
+	display: flex;
+	column-gap: 100px;
+}
+
+.footer__contact-link {
+	font-size: 1.8rem;
+	text-decoration-line: underline;
+}
+
+.footer__copyright {
+	margin-top: 28px;
+
+	padding: 28px 0;
+	color: #fff;
+	text-align: center;
+	line-height: 1.75;
+	background: var(--primary-color);
 }
